@@ -35,6 +35,5 @@ steps:
 - run:
 name: deploy-application
 command: ssh -o StrictHostKeyChecking=no $EC2_USERNAME@$EC2_PUBLIC_DNS "rm 
--rf ExampleApplication; git clone
-https://github.com/Sowjanya2302/ExampleApplication.git; source
+-rf ExampleApplication; git clone https://github.com/Sowjanya2302/ExampleApplication.git; source
 ExampleApplication/deploy.sh"
